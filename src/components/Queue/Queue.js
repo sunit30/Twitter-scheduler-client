@@ -1,6 +1,8 @@
 import React from "react";
 import "./queue.scss";
 import firebase from "../../fire";
+import "firebase/compat/auth";
+import "firebase/compat/database";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import DatePick from "../Date/Date";
