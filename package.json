@@ -21,7 +21,8 @@
     "react-scripts": "^5.0.1",
     "react-toastify": "^6.0.8",
     "react-twitter-widgets": "^1.9.5",
-    "sass": "^1.49.9"
+    "sass": "^1.49.9",
+    "morgan": "~1.9.1"
   },
   "devDependencies": {
     "sass": "^1.49.9"
