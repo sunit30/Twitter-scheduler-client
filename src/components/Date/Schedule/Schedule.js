@@ -7,6 +7,8 @@ import "react-toastify/dist/ReactToastify.css";
 import axios from "axios";
 import firebase from "../../../fire";
 import "./Schedule.scss";
+import "firebase/compat/auth";
+import "firebase/compat/database";
 
 class Schedule extends React.Component {
   constructor(props) {
