@@ -64,7 +64,7 @@ class Auth extends React.Component {
         if (data) {
           let ds = (
             <div className="logout_block">
-              <a id="logout" href={baseURLClient + "logout"}>
+              <a id="logout" href={baseURLServer + "logout"}>
                 Log Out
               </a>
             </div>
