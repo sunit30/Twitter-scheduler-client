@@ -36,7 +36,16 @@ class PostNow extends React.Component {
     };
 
     var xhr = new XMLHttpRequest();
-    xhr.open("POST", "http://localhost:5000/comment/", true);
+    let baseURLClient = "";
+    let baseURLServer = "";
+    if (process.env.NODE_ENV === "development") {
+      baseURLClient = "http://localhost:3000/";
+      baseURLServer = "http://localhost:5000/";
+    } else {
+      baseURLClient = "https://tiny-basbousa-345207.netlify.app/";
+      baseURLServer = "https://tweet-scheduler-express.onrender.com/";
+    }
+    xhr.open("POST", baseURLServer + "comment/", true);
     xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
     xhr.onreadystatechange = () => {
       if (xhr.readyState != 4 || xhr.status != 200) {
