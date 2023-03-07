@@ -48,6 +48,15 @@ class Auth extends React.Component {
   }
 
   componentDidMount() {
+    let baseURLClient = "";
+    let baseURLServer = "";
+    if (process.env.NODE_ENV === "development") {
+      baseURLClient = "http://localhost:3000/";
+      baseURLServer = "http://localhost:5000/";
+    } else {
+      baseURLClient = "https://tiny-basbousa-345207.netlify.app/";
+      baseURLServer = "https://tweet-scheduler-express.onrender.com/";
+    }
     fetch("https://pro-organiser1.firebaseio.com/auth.json")
       .then((response) => response.json())
       .then((data) => {
@@ -55,7 +64,7 @@ class Auth extends React.Component {
         if (data) {
           let ds = (
             <div className="logout_block">
-              <a id="logout" href="http://localhost:5000/logout">
+              <a id="logout" href={baseURLClient + "logout"}>
                 Log Out
               </a>
             </div>
@@ -93,7 +102,7 @@ class Auth extends React.Component {
                     <br />
                     authentic engagement
                     <br />
-                    <a id="login" href="http://localhost:5000/login">
+                    <a id="login" href={baseURLServer + "login"}>
                       <img id="twitterlogo" src={twitterlogo} alt="twitter" />
                     </a>
                   </div>
