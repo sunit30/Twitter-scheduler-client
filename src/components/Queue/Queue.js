@@ -93,6 +93,7 @@ class Queue extends React.Component {
                   value={obj.tweet}
                   onClick={this.updateFunc}
                   className="update"
+                  style="display:none;"
                 >
                   Update
                 </button>
