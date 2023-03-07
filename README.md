@@ -1,3 +1,9 @@
+# Social Media Manager | Post.It. 
+## LIVE - https://tiny-basbousa-345207.netlify.app
+### Shedule a tweet or simply post now functionalities.
+### Update/Delete scheduled tweets and view timeline.
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
