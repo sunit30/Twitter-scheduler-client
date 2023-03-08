@@ -89,13 +89,7 @@ class Queue extends React.Component {
                 >
                   Delete
                 </button>
-                <button
-                  value={obj.tweet}
-                  onClick={this.updateFunc}
-                  className="update"
-                >
-                  Update
-                </button>
+          
               </div>
             </div>
             <ToastContainer position="top-center" />
